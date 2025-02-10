@@ -108,12 +108,19 @@ button {
     border-radius: 5px;
 }
 
+
 @media (max-width: 600px) {
     nav ul li {
-        display: block;
-        margin: 10px 0;
+        display: block; /* Stacks nav items vertically on small screens */
+        margin: 10px 0; 
     }
     body {
-        padding-top: 80px;
+        padding-top: 140px;
+    }
+    .home-image, .about-image {
+        float: none; /* Removes float for mobile */
+        display: block; /* Centers images */
+        margin: 0 auto 20px; /* Centers images and adds bottom spacing */
+        width: 100%; /* Makes images responsive */
     }
 }
