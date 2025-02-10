@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;/*removes default margin*/
+    padding-top: 150px; /* prevent content from being blocked by nav bar */
+    background-color: #f4f4f4;
+    background-image: url('sakiori.jpg'); /* background */
+    background-size: cover;/*make sure the background image covers the entire viewport*/
+}
+
+/* Fixed Page Elements: Header & Footer */
+header, footer {
+    background: #333; 
+    color: white;/*text color*/
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;/*fixed header&footer*/
+    width: 100%;
+    left: 0;
+}
+header {
+    top: 0;/*make sure the header stays on top*/
+    height: 60px; /* prevent blocking */
+    line-height: 40px; /* spacing */
+}
+footer {
+    bottom: 0;/*make sure footer at the bottom*/
+}
+
+ 
+nav {
+    background: #333;
+    text-align: center;
+    padding: 15px 0;/*vertical padding*/
+    margin-bottom: 20px; /*push content down*/
+}
+
+nav ul li a {
+    color: white; /* Changed navigation text to white */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;/*display in a row*/
+    margin: 0 15px;
+}
+
+
+a:hover {
+    color: #28a745; /* hover effect on links */
+}
+
+section {
+    padding: 30px;
+    background: #fff;
+    margin: 30px;
+    border-radius: 8px; /*make the corner round*/
+    line-height:1.6;
+}
+
+/* Image Styling for About Page */
+ 
+.about-image {
+    width: 40%;
+    max-width: 300px;
+    float: left;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+ 
+ 
+.about-content {
+    text-align: left;
+    padding: 25px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;/*border*/
+    padding: 10px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    body {
+        padding-top: 80px;
+    }
+}
